@@ -117,6 +117,18 @@ export default function Home() {
             <Image src={img11} width={50} height={50} alt="logo" />
           </Link>
         </div>
+        <div className={styles.feedback}>
+          <Link href="https://www.avito.ru/orsk/kollektsionirovanie/2_lista_a4_chistye_listy_egipetskogo_papirusa_7327573674">
+            <center>
+              <h5>
+                Приобрести бумагу вы можете через авито, наиболее дешевле. Есть
+                и на Яндекс маркет "Настратика". На Вайлдберриз и Озоне магазин
+                "Тапатим", но там подороже.
+              </h5>
+            </center>
+            {/* <Image src={img11} width={50} height={50} alt="logo" /> */}
+          </Link>
+        </div>
         <footer className={styles.footer}>
           <div className={styles.footerCol}>
             <a href="\">
