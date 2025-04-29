@@ -86,6 +86,7 @@ export default function Home() {
         <div className={styles.photos}>
           {images.map((src, index) => (
             <img
+              className={styles.image}
               src={src}
               onClick={() => openImageViewer(index)}
               width="300"
