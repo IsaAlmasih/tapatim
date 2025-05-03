@@ -14,7 +14,7 @@ const page = () => {
         <div className={styles.text}>
           <h2><center>Добро пожаловать на наш сайт.</center></h2>
           <p>
-            Здравствуйте. Все вопросы напишите на почту imperiya66.ru@gmail.com 
+            Здравствуйте.
             <strong></strong>.
           </p>
         </div>

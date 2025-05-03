@@ -59,9 +59,146 @@ export default function Home() {
         {" "}
         {/* Дешевле и быстрей наносить клей нашими машинами. */}
       </div>
+      <div className={styles.feedback}>
+          <center>
+            <h5>
+              Папирусная бумага. Фоормат А4
+            </h5>
+          </center>
+      </div>
+      <div className={styles.section}>
+        <div className={styles.photos}>
+          {images.map((src, index) => (
+            <img
+              className={styles.image}
+              src={src}
+              onClick={() => openImageViewer(index)}
+              width="300"
+              key={index}
+              style={{ margin: "2px" }}
+              alt=""
+            />
+          ))}
+
+          {isViewerOpen && (
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              style={{
+                padding: "60px",
+              }}
+              closeOnClickOutside={true}
+            />
+          )}
+        </div>
+        <div className={styles.feedback}>
+            <center>
+              <h5>
+                Папирусная бумага. Формат А3
+              </h5>
+            </center>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <div className={styles.photos}>
+          {images.map((src, index) => (
+            <img
+              className={styles.image}
+              src={src}
+              onClick={() => openImageViewer(index)}
+              width="300"
+              key={index}
+              style={{ margin: "2px" }}
+              alt=""
+            />
+          ))}
+
+          {isViewerOpen && (
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              style={{
+                padding: "60px",
+              }}
+              closeOnClickOutside={true}
+            />
+          )}
+        </div>
+        {/* <div className={styles.feedback}>
+          <h2>Наше сообщество в контакте.</h2>
+          <Link href="https://vk.com/sdsioy">
+            <Image src={img11} width={50} height={50} alt="logo" />
+          </Link>
+        </div> */}
+        <div className={styles.feedback}>
+            <center>
+              <h5>
+                Книги, свитки, кандак.
+              </h5>
+            </center>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <div className={styles.photos}>
+          {images.map((src, index) => (
+            <img
+              className={styles.image}
+              src={src}
+              onClick={() => openImageViewer(index)}
+              width="300"
+              key={index}
+              style={{ margin: "2px" }}
+              alt=""
+            />
+          ))}
+
+          {isViewerOpen && (
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              style={{
+                padding: "60px",
+              }}
+              closeOnClickOutside={true}
+            />
+          )}
+        </div>
+        {/* <div className={styles.feedback}>
+          <h2>Наше сообщество в контакте.</h2>
+          <Link href="https://vk.com/sdsioy">
+            <Image src={img11} width={50} height={50} alt="logo" />
+          </Link>
+        </div> */}
+        {/* <div className={styles.feedback}>
+          <Link href="https://www.avito.ru/orsk/kollektsionirovanie/2_lista_a4_chistye_listy_egipetskogo_papirusa_7327573674">
+            <center>
+              <h5>
+                Приобрести бумагу вы можете через авито, наиболее дешевле. Есть
+                и на Яндекс маркет "Настратика". На Вайлдберриз и Озоне магазин
+                "Тапатим", но там подороже.
+              </h5>
+            </center>
+          </Link>
+        </div> */}
+      </div>
       <div className={styles.section}>
         <div className={styles.contacts}>
-          <div>
+          {/* <div>
             <a
               href={
                 "https://www.google.com/maps/search/119071,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D1%83%D0%BB%20%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5,%2010,"
@@ -70,19 +207,19 @@ export default function Home() {
               {" "}
               +7(910)415-98-76 Город Москва. Ул., дом 42.
             </a>
-          </div>
+          </div> */}
           <div>
             Тел: <a href={"tel:+7(910)4159876"}>+7(910)415-98-76 (WhatsApp)</a>
           </div>
-          <div>
-            {/* email: */}
-            {/* <a href={"mailto:info@sharov-tech.com"}> 23v@mail.ru</a> */}
-          </div>
+          {/* <div>
+            email:
+            <a href={"mailto:info@sharov-tech.com"}> 23v@mail.ru</a>
+          </div> */}
         </div>
-        <div className={styles.about}>
-          {/* <Link href="/gallery">Перейти в галерею товаров.</Link>
-          <Link href="/">Наши мероприятия.</Link> */}
-        </div>
+        {/* <div className={styles.about}>
+          <Link href="/gallery">Перейти в галерею товаров.</Link>
+          <Link href="/">Наши мероприятия.</Link>
+        </div> */}
         <div className={styles.photos}>
           {images.map((src, index) => (
             <img
